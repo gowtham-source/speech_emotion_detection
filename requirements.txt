@@ -5,4 +5,4 @@ Pillow
 opencv-python-headless
 plotly
 librosa
-tensorflow-cpu<2.4.1
+tensorflow-cpu
