@@ -4,7 +4,6 @@ matplotlib
 Pillow
 opencv-python-headless==4.5.1.48
 plotly
-requests
 librosa==0.8.0
 streamlit
 tensorflow-cpu==2.4.1
