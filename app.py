@@ -185,7 +185,7 @@ def main():
             with col1:
                 audio_file = st.file_uploader(
                     "Upload audio file", type=['wav', 'mp3', 'ogg'])
-                if st.button('Go to Streamlit'):
+                if st.button('Open voice recorder'):
 #                   js = "window.open('https://www.streamlit.io/')"  # New tab or window
                   js = "window.location.href = 'https://gowtham-source-voice-recorder-app-streamlit-app-tnzdkp.streamlit.app/'"  # Current tab
                   html = '<img src onerror="{}">'.format(js)
