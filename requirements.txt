@@ -6,3 +6,4 @@ opencv-python-headless
 plotly
 librosa
 tensorflow-cpu
+streamlib
