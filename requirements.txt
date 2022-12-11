@@ -6,3 +6,4 @@ opencv-python-headless
 plotly
 librosa
 tensorflow-cpu
+bokeh==2.4.3
