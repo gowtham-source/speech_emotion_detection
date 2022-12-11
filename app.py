@@ -11,6 +11,7 @@ import matplotlib.pyplot as plt
 from PIL import Image
 from melspec import plot_colored_polar, plot_melspec
 import random
+from bokeh.models.widgets import Div
 
 
 # load models
@@ -184,6 +185,12 @@ def main():
             with col1:
                 audio_file = st.file_uploader(
                     "Upload audio file", type=['wav', 'mp3', 'ogg'])
+                if st.button('Go to Streamlit'):
+#                   js = "window.open('https://www.streamlit.io/')"  # New tab or window
+                  js = "window.location.href = 'https://gowtham-source-voice-recorder-app-streamlit-app-tnzdkp.streamlit.app/'"  # Current tab
+                  html = '<img src onerror="{}">'.format(js)
+                  div = Div(text=html)
+                  st.bokeh_chart(div)
                 if audio_file is not None:
                     if not os.path.exists("audio"):
                         os.makedirs("audio")
