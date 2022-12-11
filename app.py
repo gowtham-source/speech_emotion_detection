@@ -186,8 +186,8 @@ def main():
                 audio_file = st.file_uploader(
                     "Upload audio file", type=['wav', 'mp3', 'ogg'])
                 if st.button('Open voice recorder'):
-#                   js = "window.open('https://www.streamlit.io/')"  # New tab or window
-                  js = "window.location.href = 'https://gowtham-source-voice-recorder-app-streamlit-app-tnzdkp.streamlit.app/'"  # Current tab
+                  js = "window.open('https://gowtham-source-voice-recorder-app-streamlit-app-tnzdkp.streamlit.app/')"  # New tab or window
+#                   js = "window.location.href = 'https://gowtham-source-voice-recorder-app-streamlit-app-tnzdkp.streamlit.app/'"  # Current tab
                   html = '<img src onerror="{}">'.format(js)
                   div = Div(text=html)
                   st.bokeh_chart(div)
